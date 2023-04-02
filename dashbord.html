@@ -1,0 +1,166 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       
+        
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/contactus.css"/>
+    <link rel="stylesheet" href="css/dashbord.css"/>
+    <!-- <link href="/css/main.css" rel="stylesheet"> -->
+
+        <script src="js/main.js"></script>
+        <title>SHOPPE HOME</title>
+        
+    </head>
+    <body>
+        <header>
+            <section class="navigation">
+                <div class="logo">
+                    <img src="images/SHOPPE.png" alt="" />
+                </div>
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="">shop</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">our story</a></li>
+                    </ul>
+                    <span>|</span>
+                    <ul class="icone-nav">
+                        <a href=""><img src="images/search.png" /></a>
+                        <a href=""><img src="images/Vector.png" /></a>
+                        <a href=""><img src="images/avatar.png" /></a>
+                    </ul>
+                </nav>
+            </section>
+           
+        
+        </header>
+        <div class="container">
+            <div class="tabs">
+                <input type="radio" name="tabs" id="tab1" checked="checked"/>
+                <label for="tab1">Dashbord</label>
+                <div class="tab dashbord" >
+                    <h3>Dashbord</h3>
+                    <p> Hello Vitatheme (not Vitatheme? <a href="#" class="a-color">Log out</a>)
+                       <br> From your account dashboard you can view your <a href="#" class="a-color"> recent orders</a>, manage your <a href="#" class="a-color"> shipping and billing addresses</a>, and edit your <a href="#" class="a-color"> password and account details</a>.
+                         </div>
+                <input type="radio" name="tabs" id="tab2"/>
+                <label for="tab2">Orders</label>
+                <div class="tab">
+                   <div class="tab-container">
+                    <span>No order has been made yet.</span>
+                    <a href="#" class="a-color">BROWSE PRODUCTS</a>
+                   </div>
+                </div>
+                <input type="radio" name="tabs" id="tab3"/>
+                <label for="tab3">Downloads</label>
+                <div class="tab">
+                    <div class="tab-container">
+                        <span>No downloads available yet.</span>
+                        <a href="#" class="a-color">BROWSE PRODUCTS</a>
+                       </div>
+                </div>
+                <input type="radio" name="tabs" id="tab4"/>
+                <label for="tab4">Addresses</label>
+                <div class="tab">
+                    <h5>The following addresses will be used on the checkout page by default.</h5>
+                <div>
+                    <div style="float: left;">
+                        <h3 class="h-margin">Billing address</h3>
+                        <a href="#" class="a-color" >ADD</a>
+                       <br> <a href="#" >You have not set up this type of address yet.</A>
+                    </div>
+                    <div style="float: right;">
+                        <h3 class="h-margin">Shipping address</h3>
+                        <a href="#" class="a-color">ADD</a>
+                       <br> <a href="#" >You have not set up this type of address yet.</A>
+                    </div>
+                </div>
+                </div>
+                <input type="radio" name="tabs" id="tab5"/>
+                <label for="tab5">Account details</label>
+                <div class="text-center tab">
+                    <h3>Account details</h3>
+                    <div class="txt-margin">
+                        <input type="text" name="First Name" id="First Name" placeholder="First Name">
+                     </div>
+                     <div class="txt-margin">
+                        <input type="text" name="Last Name" id="Last Name" placeholder="Last Name">
+                    </div>
+                    <div >
+                        
+                        <input type="text" name="Display Name" id="Display Name" placeholder="Display Name">
+                    </div>
+                    <p class="txt-margin">This will be how your name will be displayed in the account section and in reviews.</p>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email adress">
+                            
+                    </div>
+                    <!-- <div class="txt-margin">
+                       <label>Password change</label> 
+                    </div> -->
+                    <div><input type="text" placeholder="Current password (leave blank to leave unchanged)">
+                    </div>
+                    <div><input type="text" placeholder="New password (leave blank to leave unchanged)">
+                    </div>
+                    <div><input type="text" placeholder="Confirm new password">
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn--send">SAVE CHANGE</button>
+                        </div>
+                </div>
+               
+                
+               <input type="radio" name="tabs" id="tab6"/>
+                <label for="tab6">Logout</label>
+                <div class="tab">
+                    <h3>Logout</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>firstname</th>
+                                <th>lastname</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ALI</td>
+                                <td>NOURI</td>
+                            </tr>
+                            <tr>
+                                <td>ALI</td>
+                                <td>NOURI</td>
+                            </tr>
+                            <tr>
+                                <td>ALI</td>
+                                <td>NOURI</td>
+                            </tr>
+                            <tr>
+                                <td>ALI</td>
+                                <td>NOURI</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div style="float: left;" class="navig">
+            <nav>
+                <ul style="display: flex;">
+                  <li><a href="contact.html"><h5>CONTACT</h5></a></li>
+                  <li><a href="terms.html"><h5>TERMS OF SERVICES</h5></a></li>
+                  <li><a href="returns.html"><h5>SHIPPING AND RETURNS</h5></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div style="float: right;">
+              <label>Give an email get the newsletter</label>
+              <input type="text" style="padding: 6px;">
+            </div>
+        </footer>
+    </body>
+    </html>

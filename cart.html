@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       
+        
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/contactus.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+    <!-- <link href="/css/main.css" rel="stylesheet"> -->
+
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+
+(function(){
+
+let inputContainer = document.querySelector(".input-container");
+console.log(inputContainer);
+let input = inputContainer.firstElementChild.nextElementSibling;
+let minus = inputContainer.firstElementChild;
+let plus = inputContainer.lastElementChild;
+
+function changeNumber(e) {
+    if(e.target == minus) {
+        input.value--;
+    } else if(e.target == plus) {
+        input.value++;
+    }
+}
+
+inputContainer.addEventListener("click", changeNumber);
+})();
+        </script>
+        <title>Cart</title>
+        
+    </head>
+<body>
+    <header>
+        <section class="navigation">
+            <div class="logo">
+                <img src="images/SHOPPE.png" alt="" />
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="">shop</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">our story</a></li>
+                </ul>
+                <span>|</span>
+                <ul class="icone-nav">
+                    <a href=""><img src="images/search.png" /></a>
+                    <a href=""><img src="images/Vector.png" /></a>
+                    <a href=""><img src="images/avatar.png" /></a>
+                </ul>
+            </nav>
+        </section>
+       
+    
+    </header>
+<div class="container">
+    <div class="cart ">
+        <h2> Shopping Cart</h2>
+    </div>
+    <main class="cart-container ">
+        <div class="cart-products border">
+            <div class="products">
+                
+                <div class="product-item border">
+                    <img src="product.png">
+                    <div>
+                        <p>Lira Earrings</p>
+                        <p>Black / Medium</p>
+                        <p>$ 20,00</p>
+                    </div>
+                    <div class="input-container">
+                        <div id="minus">-</div>
+                        <input type="text" id="number" value="0">
+                        <div id="plus">+</div>
+                      </div>
+                    <span class="delete">X</span>
+                </div>
+                <div class="product-item border">
+                    <img src="product.png">
+                    <div>
+                        <p>Lira Earrings</p>
+                        <p>Black / Medium</p>
+                        <p>$ 20,00</p>
+                    </div>
+                    <div class="input-container">
+                        <div id="minus">-</div>
+                        <input type="text" id="number" value="0">
+                        <div id="plus">+</div>
+                      </div>
+                    <span class="delete">X</span>
+                </div>
+                <div class="product-item border">
+                    <img src="product.png">
+                    <div>
+                        <p>Lira Earrings</p>
+                        <p>Black / Medium</p>
+                        <p>$ 20,00</p>
+                    </div>
+                        <div class="input-container">
+                          <div id="minus">-</div>
+                          <input type="text" id="number" value="0">
+                          <div id="plus">+</div>
+                        </div>
+
+                    <span class="delete">X</span>
+                </div>
+            </div>
+            <div class="cart-cta"></div>
+        </div>
+        <div class="cart-totals border">
+            <h3>Cart totals</h3>
+                <div class="total-item">
+                    <div class="total-item-title"><span class="total-label">SUBTOTAL</span> </div>
+                    <div class="total-item-details"><span>60.00$</span></div>
+                </div>
+                <div class="total-item">
+                    <div class="total-item-title">
+                        <span class="total-label">SHIPPING</span>
+                    </div>
+                    <div class="total-item-details"><span>Shipping cost will be calculated once you have provided address</span></div>
+                </div>
+                <div class="total-item">
+                    <div class="total-item-title">
+                    </div>
+                    <div class="total-item-details">
+                        <h3>CALCULATE SHIPPING</h3>
+                        <select>
+                            <option selected disabled>SELECT COUNTRY</option>
+                            <option>FRANCE</option>
+                            <option>FRANCE</option>
+                            <option>FRANCE</option>                            
+                        </select>
+                        <select>
+                            <option selected disabled>SELECT VILLE</option>
+                            <option>Paris</option>
+                            <option>Rennes</option>
+                            <option>Nice</option>                            
+                        </select>
+                        <select>
+                            <option selected disabled>POST CODE/ZIP</option>
+                            <option>75001</option>
+                            <option>80000</option>
+                            <option>65000</option>                            
+                        </select>
+                        <button>UPADTE TOTALS</button>
+                    </div>
+                </div>
+                <div class="total-item">
+                    <div class="total-item-title">
+                        TOTAL
+                    </div>
+                    <div class="total-item-details right">
+                        <span>70$</span>
+                    </div> 
+                </div>    
+                <div class="total-item">
+                    <button>PROCESS TO CHECKOUT</button>
+                </div>   
+        </div>
+    </main>
+</div>
+<footer>
+    <div style="float: left;" class="navig">
+    <nav>
+        <ul style="display: flex;">
+          <li><a href="contact.html"><h5>CONTACT</h5></a></li>
+          <li><a href="terms.html"><h5>TERMS OF SERVICES</h5></a></li>
+          <li><a href="returns.html"><h5>SHIPPING AND RETURNS</h5></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="float: right;">
+      <label>Give an email get the newsletter</label>
+      <input type="text" style="padding: 6px;">
+    </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,218 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       
+        
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    
+        <script src="js/main.js"></script>
+        <title>SHOPPE HOME</title>
+        <style> :root{
+
+            --font-main-color:#000000;
+        
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        
+        }
+        a{
+            text-decoration: none;
+            color: var(--font-main-color) ;
+        }
+        header{
+            width: 100%;
+            
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+            align-items: center;
+            
+        }
+        .logo{
+            width:15%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width:30%;
+        }
+        .main-nav{
+            display: flex;
+            justify-content: space-between;
+            width:60%;
+            list-style: none;
+            text-transform: capitalize;
+        }
+        .main-nav li{
+            float: left;
+        }
+        .icone-nav{
+            display: flex;
+            justify-content: space-between;
+            width:30%;
+        }
+        .slider img{
+            width: 100%;
+        }
+       .latest-products li{
+        float: left;
+        width: 33%;
+        margin-left: 2px;
+       }
+       .latest-products li img{
+        width: 98%;
+        }
+        .flex-container{
+            /* background-color: rgb(234, 223, 223); */
+            height: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around ;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /* .item{
+            background-color:antiquewhite;
+            height: 50px;
+            width: 30%;
+            margin: 10px;
+            flex: 30%;
+        } */
+        .item {
+    width: calc(33.33% - 5px);
+    margin-left: 5px;
+}
+.item img{
+    width: 100%;
+}
+.item .price{
+    color: #A18A68
+;
+}
+footer{
+    padding: 25px;
+    padding-left: 140px;
+    border-top: 1px solid;
+    color: #707070;
+
+}
+footer .navig{ 
+    width: 50%;
+}
+footer nav {
+    width: 100%;
+}
+footer ul{ 
+list-style-type: none;
+width: 100%;
+}
+footer ul li a{ font-style: unset;
+
+    color: #707070;}
+footer ul li{ 
+width: 30%;
+
+}
+.btn-submit{
+    background-color: #000000;
+    color: white;
+    width: 100%;
+}
+form textarea{
+    width: 100%;
+}
+</style>
+        
+    </head>
+    <body>
+        <!-- <div class="item" -->
+        <div class="container">
+<header>
+    <section class="navigation">
+        <div class="logo">
+            <img src="images/SHOPPE.png" alt="" />
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="">shop</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">our story</a></li>
+            </ul>
+            <span>|</span>
+            <ul class="icone-nav">
+                <a href=""><img src="images/search.png" /></a>
+                <a href=""><img src="images/Vector.png" /></a>
+                <a href=""><img src="images/avatar.png" /></a>
+            </ul>
+        </nav>
+    </section>
+   <section>
+    <div>
+        <h1>Contact Us</h1>
+        <p>Say Hello send us your thoughts about our products or share
+            your ideas with our Team!</p>
+           <form>
+
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="First name" /></td>
+                    <td><input type="text" placeholder="Last name" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Email" /></td>
+                    <td><input type="text" placeholder="Subject" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea placeholder="Message"></textarea>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+
+                        <input type="submit" value="SEND" class="btn-submit">
+                    </td>
+                </tr>
+            </table>
+           </form> 
+
+
+    </div>
+
+
+   </section>
+
+</header>
+</div>
+<footer>
+    <div style="float: left;" class="navig">
+    <nav>
+        <ul style="display: flex;">
+          <li><a href="contact.html"><h5>CONTACT</h5></a></li>
+          <li><a href="terms.html"><h5>TERMS OF SERVICES</h5></a></li>
+          <li><a href="returns.html"><h5>SHIPPING AND RETURNS</h5></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="float: right;">
+      <label>Give an email get the newsletter</label>
+      <input type="text" style="padding: 6px;">
+    </div>
+</footer>
+    </body>
+</html>
